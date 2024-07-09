@@ -41,3 +41,17 @@ cargo xtask build
 ```bash
 RUST_LOG=info cargo xtask run
 ```
+
+```
+$ RUST_LOG=info cargo xtask run -- --iface bond0
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.02s
+     Running `target/debug/xtask run -- --iface bond0`
+    Finished `dev` profile [optimized] target(s) in 0.10s
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 0.07s
+[2024-07-09T21:12:47Z INFO  myapp] Waiting for Ctrl-C...
+[2024-07-09T21:12:48Z INFO  myapp] received a packet
+[2024-07-09T21:12:48Z INFO  myapp] received a packet
+[2024-07-09T21:12:48Z INFO  myapp] received a packet
+[2024-07-09T21:12:48Z INFO  myapp] received a packet
+...
+```
