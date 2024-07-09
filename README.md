@@ -55,3 +55,10 @@ $ RUST_LOG=info cargo xtask run -- --iface bond0
 [2024-07-09T21:12:48Z INFO  myapp] received a packet
 ...
 ```
+
+## TODO
+- learn to use map/array shared between eBPF/user program
+  [PerCpuArray](https://medium.com/@stevelatif/aya-rust-tutorial-part-5-using-maps-4d26c4a2fff8)
+  [bpf map](https://github.com/vadorovsky/aya-btf-maps-experiments/blob/main/ebpf/aya/src/main.rs)
+  - PID_MAP, DUMMY_MAP hooks between eBPF/user program
+  - tracepoint(name="fork")
