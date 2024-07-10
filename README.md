@@ -62,3 +62,5 @@ $ RUST_LOG=info cargo xtask run -- --iface bond0
   [bpf map](https://github.com/vadorovsky/aya-btf-maps-experiments/blob/main/ebpf/aya/src/main.rs)
   - PID_MAP, DUMMY_MAP hooks between eBPF/user program
   - tracepoint(name="fork")
+- learn to hook to perf event
+    - [perf event](https://www.infoq.com/articles/benchmark-profile-ebpf-code/)
